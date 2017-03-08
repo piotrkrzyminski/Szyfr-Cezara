@@ -7,7 +7,6 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import es.hol.piotrkrzyminski.model.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -68,10 +67,10 @@ public class MainController implements Initializable{
 		if(isFieldsValuesProper()) {
 			setLabelInfo(infoLabel,null);
 			resultTextArea.setText(model.encrypt(inputTextArea.getText(), keyTextField.getText()));
-			setLabelInfo(endInfo, "Zakoñczono szyfrowanie");
+			setLabelInfo(endInfo, "ZakoÃ±czono szyfrowanie");
 		}
 		else {
-			setLabelInfo(infoLabel, "Wprowadzone dane s¹ niepoprawne");
+			setLabelInfo(infoLabel, "Wprowadzone dane sÂ¹ niepoprawne");
 		}
 	}
 	
@@ -95,7 +94,7 @@ public class MainController implements Initializable{
 	@FXML
 	void openFile(ActionEvent event) {
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Otwórz");
+		fileChooser.setTitle("OtwÃ³rz");
 		FileChooser.ExtensionFilter extensionFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
 		fileChooser.getExtensionFilters().add(extensionFilter);
 		
@@ -137,7 +136,7 @@ public class MainController implements Initializable{
 	}
 	
 	/**
-	 * metoda sprawdza czy pole tekstowe nie jest puste i za pomoc¹ wyrazenia regularnego sprawdza poprawnosc wprowadzonego klucza
+	 * metoda sprawdza czy pole tekstowe nie jest puste i za pomocÂ¹ wyrazenia regularnego sprawdza poprawnosc wprowadzonego klucza
 	 * @return
 	 */
 	private boolean isFieldsValuesProper() {
