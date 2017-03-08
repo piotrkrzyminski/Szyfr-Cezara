@@ -5,8 +5,7 @@ public class Model {
 	private int key; //klucz szyfrujacy
 	private String[] words; //lancuch inputText rozbity na tablice zlozona z wyrazow
 	private StringBuilder builder = new StringBuilder();
-	
-	
+		
 	/**
 	 * pobierz ciag znakow z pola tekstowego i zapisz do pola inputText
 	 * pobierz klucz szyfrujacy i zapisz do pola key
@@ -36,9 +35,8 @@ public class Model {
 	
 	/**
 	 * podziel kazde slowo z tablicy words na litery, a jej kod ASCII przesun o pozycje o wartosci pola key
-	 * polacz te litery w wyraz, a wyraz dopisz za pomoc¹ SceneBuilder do ciagu zakodowanego
+	 * polacz te litery w wyraz, a wyraz dopisz za pomocÂ¹ SceneBuilder do ciagu zakodowanego
 	 */
-	
 	private void encryptWords() {
 		for(int i=0; i<words.length; i++) {
 			String word = words[i];
