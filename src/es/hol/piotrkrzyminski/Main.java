@@ -1,7 +1,6 @@
 package es.hol.piotrkrzyminski;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -33,7 +32,7 @@ public class Main extends Application {
 	}
 	
 	/**
-	 * stwórz nowa scene i przypisz ja do okna aplikacji
+	 * stwÃ³rz nowa scene i przypisz ja do okna aplikacji
 	 * ustaw apliakcje na widoczna
 	 */
 	private void drawGUI() {
